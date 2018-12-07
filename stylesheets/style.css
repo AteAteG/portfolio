@@ -1,9 +1,10 @@
 /* color: #00FFCB; (verde)
   color: #193D37; (verde oscuro texto) */
+  /* color: #98AD81 (verde claro v1) */
 
 
 body{
-  background: linear-gradient(to bottom, #98AD81, #F3A183) no-repeat center center fixed;
+  background: linear-gradient(to bottom, #113738, #F3A183) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,34 +17,53 @@ img{
   width: 80px;
   margin: 20px;
 }
+.topMenu span{
+  font-size: 20px;
+  color: #00FFCB;
+  margin: 0px 20px;
+  margin-top: 30px;
+  margin-right: 50px;
+  float: right;
+  font-weight: bold;
+
+}
 
 h1{
   text-align: center;
   font-size: 100px;
   color: #EDC4BE;
+
 }
 h3{
   margin-top: 20px;
   text-align: center;
   font-size: 60px;
-  color: #193D37;
+  color: #113738;
   padding-bottom: 40px;
+  font-weight: bold;
 }
 
 .container{
-  text-align: center;
+  justify-content: center;
+  text-align: left;
   color: #193D37;
   font-size: 30px;
   display: flex;
   width: 300 px;
   height: 50 px;
   line-height: : 40px;
+  /* overflow hidden oculta lo que se sale, si ponemos overflow a un padre, su hijo, al salirse dejará de verse. Hace como una máscara
+  auto: cuando algo se salga que se recorte pero que se puea ver con scroll si hay contenido dentro. Hay overflow en x, en y o left/right
+  */
   overflow: hidden;
-
 }
-
+.container p{
+  font-weight: bold;
+  color: #113738;
+}
 ul, p {
   margin: 0;
+  height: 30px;
 }
 
 ul{
@@ -51,28 +71,39 @@ ul{
   padding-left: 10px;
   animation: changeText linear 7s infinite;
 }
+.container li{
+  color: #00FFCB;
+}
+
 @keyframes changeText{
   0%{ margin-top: 0;}
-	20%{ margin-top: -40px;}
+  	20%{ margin-top: 0;}
 
-	21% {margin-top: -80px;}
-	40% {margin-top: -120px;}
+  	25% {margin-top: -30px;}
+  	50% {margin-top: -30px;}
 
-	41% {margin-top: -160px;}
-	60% {margin-top: -2000px;}
+  	55% {margin-top: -60px;}
+  	80% {margin-top: -60px;}
 
-	61% {margin-top: -240px;}
-	80% {margin-top: -280px;}
+  	85% {margin-top: -30px;}
+  	95% {margin-top: -30px;}
 
-  81% {margin-top: -320px;}
-	100% {margin-top: -340px;}
+  	100% {margin-top: 0;}
 
 }
 
-li{
-padding-bottom: 40px;
-}
+/* .hamburguerIcon div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  border-radius: 50px;
+  position: static;
+  justify-content: right;
+} */
+.projectImages{
 
+}
 .prueba{
   height: 16000px;
 }
